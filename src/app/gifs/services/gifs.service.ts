@@ -7,6 +7,10 @@ import { Injectable } from '@angular/core';
 export class GifsService {
   private apiKey: string = "2HPEvcImQzXacVtKEKz2uBHh3rZ9LMh1";
   private _historial: string[] = [];
+
+  //TODO: cambiar
+  public resultados: any[] = [];
+
   get historial() {
     return [...this._historial];
   }
@@ -17,9 +21,10 @@ export class GifsService {
       this._historial.unshift(query);
       this._historial = this._historial.splice(0, 10);
     }
-    this.http.get("https://api.giphy.com/v1/gifs/search?api_key=2HPEvcImQzXacVtKEKz2uBHh3rZ9LMh1&q=hola&limit=10")
+    this.http.get(`https://api.giphy.com/v1/gifs/search?api_key=2HPEvcImQzXacVtKEKz2uBHh3rZ9LMh1&q=${query}&limit=10`)
       .subscribe((resp: any) => {
-        console.log(resp.data);
+        console.log(resp);
+        this.resultados = resp.data;
       });
   }
 }
