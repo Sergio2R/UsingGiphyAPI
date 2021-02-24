@@ -2,6 +2,20 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.0.
 
+## Bla bla bla technologies
+
+-Platform 
+    -Angular
+-Responsive 
+    -Bootstrap 5.0 Beta
+-API Rest from
+    -(https://developers.giphy.com/)
+-Localstorage
+-Icons
+    -https://fontawesome.com/
+-Animations
+    -https://animate.style/
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
