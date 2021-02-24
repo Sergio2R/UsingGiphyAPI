@@ -1,3 +1,11 @@
-<h5>Buscar:</h5>
-<input type="text" class="form-control" placeholder="Buscar Gifs..."
-(keyup.enter)="buscar()" #txtBuscar>
+<h5>Find gifs from <a href="https://giphy.com/">Giphy</a></h5>
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+        <button class="btn btn-primary" type="button" (click)="buscar()"><i class="fas fa-search"></i></button>
+    </div>
+    <input type="text" class="form-control" placeholder="Find Gifs..." (keyup.enter)="buscar()" #txtBuscar>
+</div>
+<div class="input-group mb-3">
+    <button class="btn btn-info" type="button" (click)="buscarTrendy()"><i class="fas fa-poll"></i> Trendy Gifs</button>
+    <button class="btn btn-info disabled" type="button" (click)="buscarRandom()" disabled><i class="fas fa-dice"></i> Random Gifs</button>
+</div>

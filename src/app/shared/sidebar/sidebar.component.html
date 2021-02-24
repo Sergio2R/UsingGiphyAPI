@@ -1,11 +1,20 @@
-<div class="bg-dark border-right p-3" id="sidebar">
-    <h3 class="text-light">
-        GIFS-APP
-    </h3>
-    <hr class="text-white">
-    <div class="list-groupf list-reset">
-        <a *ngFor="let item of historial" href="#" class="list-group-item list-group-item-action" 
-        (click)="buscar(item)">{{item |
+<div class="bg-dark bg-gradient-primary border-right p-3" id="sidebar">
+    <h4 class="text-light">
+        <i class="fas fa-images"></i> Sergio2R - GIPHY API IMPLEMENTATION
+    </h4>
+    <hr class="text-light">
+    <a class="header__ExtendedLink-sc-1d8q1bn-3 fnPpXu" href="https://giphy.com/">
+        <img src="https://media.giphy.com/media/3oEjI0Jort6dqkW7Ty/giphy-downsized.gif" alt="giphy.com" width="100%">
+    </a>
+    <hr class="text-light">
+    <h4 class="text-light">
+        <i class="fas fa-history"></i> Your results
+    </h4>
+    <hr class="text-light">
+    <div class="list-group list-reset">
+        <a *ngFor="let item of historial" href="#" class="list-group-item list-group-item-action"
+            (click)="buscar(item)">{{item |
             titlecase}}</a>
     </div>
+    <p class="text-light">float</p>
 </div>

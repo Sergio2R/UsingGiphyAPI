@@ -13,6 +13,10 @@ export interface SearchGifsResponse {
     meta:       Meta;
 }
 
+export interface SearchGifsRandomResponse {
+    data:       Gif;
+}
+
 export interface Gif {
     type:                       Type;
     id:                         string;

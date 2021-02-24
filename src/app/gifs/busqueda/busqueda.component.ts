@@ -20,4 +20,12 @@ export class BusquedaComponent {
     this.gifsService.buscarGifs(valor);
     this.txtBuscar.nativeElement.value = "";
   }
+
+  buscarTrendy() {
+    this.gifsService.buscarTrendyGifs();
+  }
+
+  buscarRandom() {
+    this.gifsService.buscarRandom();
+  }
 }
